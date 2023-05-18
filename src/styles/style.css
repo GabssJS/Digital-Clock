@@ -24,15 +24,36 @@ body {
 }
 
 .HourContainer {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.2);
     aspect-ratio: 1/1;
     width: min(35%, 300px);
 }
 
 .HourInfo {
-    font-size: min(25px, 4vw)
+    font-size: min(25px, 3vw)
 }
 
 .contentContainer {
     height: 100vh;
+    padding-inline: 20px;
+}
+
+.amPm {
+    aspect-ratio: 1/1;
+    width: min(12%, 120px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.buttonWrapper {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: max(20px, 5%);
+    height: 10%;
+}
+
+.altButton {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: min(30%, 140px);
+    height: min(50%, 100px);
 }
