@@ -1,6 +1,10 @@
 # Basic Digital Clock
 A basic digital clock made with React JS and Bootstrap, along with some plain CSS for more specific styling.
 
+#How to access
+
+You can access the [firebase link](https://basic-digital-clock.web.app/) or install it manually.
+
 # Installing
 
 ## Requirements
