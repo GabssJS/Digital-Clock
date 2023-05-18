@@ -27,14 +27,13 @@ cd digital-clock
 npm install
 
 npm run dev
-
 ```
 
 4. After following these steps, a local server will open and a tab containing the application in your default browser will open.
 
 ### Downloading via Github
 
-1. Access the releases tab and download the source code from the latest version available (or any version that catches your eye);
+1. Access the [releases tab](https://github.com/GabssJS/Digital-Clock/releases) and download the source code from the latest version available (or any version that catches your eye);
 
 2. Extract the folder
 
