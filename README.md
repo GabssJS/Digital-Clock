@@ -33,7 +33,7 @@ npm install
 npm run dev
 ```
 
-4. After following these steps, a local server will open and a tab containing the application in your default browser will open.
+4. After following these steps, a local server will start and a tab containing the application in your default browser will open.
 
 ### Downloading via Github
 
@@ -51,5 +51,5 @@ npm install
 npm run dev
 ```
 
-5. After following these steps, a local server will open and a tab containing the application in your default browser will open.
+5. After following these steps, a local server will start and a tab containing the application in your default browser will open.
 
