@@ -25,11 +25,12 @@ body {
 
 .HourContainer {
     background-color: rgba(255, 255, 255, 0.2);
+    aspect-ratio: 1/1;
+    width: min(35%, 300px);
 }
 
-.smHourContainer {
-    height: 20vh;
-    width: 35vw;
+.HourInfo {
+    font-size: min(25px, 4vw)
 }
 
 .contentContainer {

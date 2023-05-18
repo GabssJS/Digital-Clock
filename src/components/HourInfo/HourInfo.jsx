@@ -29,6 +29,7 @@ const HourInfo = (props) => {
     return (
         <div className="d-inline-flex flex-column justify-content-center align-items-center border rounded smHourContainer HourContainer">
             <h1 className="display-1 hourNumber">{timeInfo/ 10 >= 1 ? timeInfo : '0' + timeInfo}</h1>
+            <span className="display-5 HourInfo text-muted">{props.info}</span>
         </div>
     )
 }
