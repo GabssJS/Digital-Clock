@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --backgroundLight: #76E7CD;
+    --backgroundDark: #30BCED;
+}
+
+@keyframes backgroundAnimation {
+    from {background-position: 0% center;}
+    to {background-position: -200% center;}
+}
+
+body {
+    background-image: linear-gradient(to right, var(--backgroundDark), var(--backgroundLight), var(--backgroundDark));
+    background-size: 200%;
+    animation: backgroundAnimation 10s infinite linear;
+}
+
+.hourNumber {
+    padding: 0;
+    margin: 0;
+}
+
+.HourContainer {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.smHourContainer {
+    height: 20vh;
+    width: 35vw;
+}
+
+.contentContainer {
+    height: 100vh;
+}
