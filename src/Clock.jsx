@@ -7,8 +7,8 @@ const Clock = () => {
     const [format, setFormat] = useState()
     const [lang, setLang]  = useState("PT-BR")
 
-    function handleClickAm() {
-        setFormat("AM")
+    function handleClickAmPm() {
+        setFormat("amPm")
     }
 
     function handleClickTwnFr() {
@@ -24,7 +24,7 @@ const Clock = () => {
         <div className="d-flex justify-content-center align-items-center contentContainer">
             <HourInfo firstBox={lang == "PT-BR" ? "horas" : "hours"} secondBox={lang == "PT-BR" ? "minutos" : "minutes"} thirdBox={lang == "PT-BR" ? "segundos" : "seconds"} format={format}/>
             <div className="position-absolute buttonWrapper d-flex gap-3 w-100 justify-content-center align-items-center">
-                <button onClick={() => handleClickAm()} className=" border altButton rounded">AM/PM</button>
+                <button onClick={() => handleClickAmPm()} className=" border altButton rounded">AM/PM</button>
                 <button onClick={() => handleClickTwnFr()} className=" border altButton rounded">24h</button>
             </div>
             <Dropleft changeLang={(Language) => handleChangeLang(Language)} />
