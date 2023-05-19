@@ -27,7 +27,6 @@ const Clock = () => {
                 <button onClick={() => handleClickAmPm()} className=" border altButton rounded">AM/PM</button>
                 <button onClick={() => handleClickTwnFr()} className=" border altButton rounded">24h</button>
             </div>
-            <Dropleft changeLang={(Language) => handleChangeLang(Language)} />
         </div>
     </>
     )
