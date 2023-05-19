@@ -34,17 +34,17 @@ const HourInfo = (props) => {
         <>
         <div className="w-100 d-flex flex-row justify-content-center align-items-center gap-2 gap-sm-4">
             <div className="d-inline-flex flex-column justify-content-center align-items-center border rounded HourContainer">
-                <h1 className="display-1 hourNumber">{props.format == "AM" ? "0" + (hours - 12) : hours / 10 >= 1 ? hours : "0" + hours}</h1>
+                <h1 className="display-1 hourNumber">{props.info == "AM" ? (hours - 12) > 0 && (hours - 12) < 10 ? "0" + (hours - 12) : (hours - 12) < 0 ? "0" + hours : hours - 12 : hours < 10 ? "0" + hours : hours}</h1>
                 <span className="display-5 HourInfo text-muted">{props.firstBox}</span>
             </div>
             <span className="display-5">:</span>
             <div className="d-inline-flex flex-column justify-content-center align-items-center border rounded HourContainer">
-                <h1 className="display-1 hourNumber">{minutes / 10 >= 1 ? minutes : '0' + minutes}</h1>
+                <h1 className="display-1 hourNumber">{minutes < 10 ? '0' + minutes : minutes}</h1>
                 <span className="display-5 HourInfo text-muted">{props.secondBox}</span>
             </div>
             <span className="display-5">:</span>
             <div className="d-inline-flex flex-column justify-content-center align-items-center border rounded HourContainer">
-                <h1 className="display-1 hourNumber">{seconds / 10 >= 1 ? seconds : '0' + seconds}</h1>
+                <h1 className="display-1 hourNumber">{seconds < 10 ? '0' + seconds : seconds}</h1>
                 <span className="display-5 HourInfo text-muted">{props.thirdBox}</span>
             </div>
             {props.format == "AM" && <span className="display-5">{dayPeriod}</span>}
@@ -54,3 +54,4 @@ const HourInfo = (props) => {
 }
 
 export default HourInfo
+

@@ -57,3 +57,44 @@ body {
     width: min(30%, 140px);
     height: min(50%, 100px);
 }
+
+.langToggle {
+    position: absolute;
+    top: clamp(20px, 8%, 100px);
+    right: clamp(25px, 5%, 100px);
+}
+
+.langButton {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: min-content;
+    height: min-content;
+}
+
+.langMenu {
+    right: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px white solid;
+    border-radius: 6px 0px 6px 6px;
+}
+
+.rounded-right-side {
+    border-bottom: 1px white solid;
+    border-right: 1px white solid;
+    border-top: 1px white solid;
+    border-left: none;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.dropLink {
+    transition: 500ms;
+}
+
+.dropLink:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 200ms;
+}
+
+.dropLink:active {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
